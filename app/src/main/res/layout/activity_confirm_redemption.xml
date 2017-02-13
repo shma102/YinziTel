@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f8"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title">
+
+        <TextView
+            android:id="@+id/confirm_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wdlc"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="户行"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/confirem_huhang"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@null"
+            android:hint="请输入开户行名称" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="名称"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/confirm_mingcheng"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@null"
+            android:hint="请输入支开户行名称" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="账户"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/confirm_zhanghu"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@null"
+            android:hint="请输入银行卡账户"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <LinearLayout
+        android:id="@+id/confirm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="持卡人"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/confirm_chikaren"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@null"
+            android:hint="请输入持卡人姓名" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <Button
+        android:id="@+id/shts_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/confirm_layout"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_selector3"
+        android:text="确认赎回"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="温馨提示：我们会在1-3个工作日内把本金退还到您指定的银行卡号上，请耐心等待"
+        android:textColor="@color/more_gray"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 首字母 -->
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="top"
+        android:background="@color/gray"
+        android:paddingLeft="10dip"
+        android:textColor="#FFFFFF"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/alpha">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/myheadimage_06" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:singleLine="true"
+            android:text="456"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:singleLine="true"
+            android:text="123"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+</LinearLayout>

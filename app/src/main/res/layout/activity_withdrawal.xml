@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/withdrawal_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/withdrawal_back2my"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txjl"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+  <LinearLayout
+      android:id="@+id/withdawal_layout1"
+      android:layout_below="@id/withdrawal_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:visibility="visible">
+      <LinearLayout
+          android:id="@+id/NotesWithDraw_Title"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="#F7F8FA"
+          android:orientation="horizontal"
+          android:padding="10dp">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="提现时间"
+              android:textColor="#aaaaaa"
+              android:textSize="16dp" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="提现金额"
+              android:textColor="#aaaaaa"
+              android:textSize="16dp" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="处理结果"
+              android:textColor="#aaaaaa"
+              android:textSize="16dp" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="提现方式"
+              android:textColor="#aaaaaa"
+              android:textSize="16dp" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/NoteForWithCash_empty"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="90dp"
+          android:padding="5dp"
+          android:text="123"
+          android:textSize="20dp"
+          android:visibility="visible" />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/noteForWithCash_list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="gone"></android.support.v7.widget.RecyclerView>
+  </LinearLayout>
+</RelativeLayout>

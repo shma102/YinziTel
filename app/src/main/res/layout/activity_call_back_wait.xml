@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59B8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/callback_callphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginTop="6.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="#ffffff"
+                android:textSize="28sp"></TextView>
+
+            <TextView
+                android:id="@+id/callback_callstats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6.0dip"
+                android:layout_marginTop="150dip"
+                android:layout_weight="4.74"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="16dip"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_gravity="bottom"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/layout_hang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/login_selector6"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="挂断重拨"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="隐私电话有效防泄漏，安全便捷"
+            android:textColor="#ADADAD"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

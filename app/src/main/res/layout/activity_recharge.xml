@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PayForByZyb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/recharge_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/recharge_back2my"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/recharge"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recharge_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="温馨提示:本软件不同级别享有不同功能，有效期内使用本软件拨打中国大陆地区任意号码都是免费的，有效期一到所有余额及相关服务都被清零。"
+                android:textColor="#858585" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rechargeTwenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/rechargeTwety_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moneybg" />
+
+                    <TextView
+                        android:id="@+id/money_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:text="20"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="140dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="正式会员 有效期一月"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="可设置显示本机号码，随机号码。"
+                            android:textColor="@color/recharge_text2"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rechargeOneHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/rechargeOneHundred_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moneybg" />
+
+                    <TextView
+                        android:id="@+id/money_100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="140dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="高级会员 有效期半年"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="可购买自定义号码，允许变音。"
+                            android:textColor="@color/recharge_text2"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rechargeTwoHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moneybg" />
+
+                    <TextView
+                        android:id="@+id/money_200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:text="200"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="140dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="高级会员 有效期一年"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="可购买自定义号码，允许变音。"
+                            android:textColor="@color/recharge_text2"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rechargeFiveHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moneybg" />
+
+                    <TextView
+                        android:id="@+id/money_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:text="500"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="140dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="黄金会员 有效期三年"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="包含高级会员全部功能，可购买座机号码。"
+                            android:textColor="@color/recharge_text2"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rechargeEightHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moneybg" />
+
+                    <TextView
+                        android:id="@+id/money_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:text="800"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="140dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="钻石会员 有效期六年"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="包含黄金会员全部功能。"
+                            android:textColor="@color/recharge_text2"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rechargeTwoThousand"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moneybg" />
+
+                    <TextView
+                        android:id="@+id/money_2000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:text="2000"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="140dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="至尊会员 有效期十年"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="包含以上级别全部功能。"
+                            android:textColor="@color/recharge_text2"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--立即办理-->
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/zhifubackground"-->
+    <!--&gt;-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#e2e2e2"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/heji"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="合计：￥"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textColor="@color/red"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/amountTo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="20"-->
+    <!--android:layout_toRightOf="@id/heji"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textColor="@color/red"-->
+    <!--/>-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--&gt;-->
+    <!--<Button-->
+    <!--android:id="@+id/deal_btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="立即办理"-->
+    <!--android:textColor="#fff"-->
+    <!--android:background="#48B0ED"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

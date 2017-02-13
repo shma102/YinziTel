@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/gain_details_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/licai_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lccp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/gain_details_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gain_details_toolbar"
+        android:background="#f7f7f9">
+
+        <ScrollView
+            android:id="@+id/gain_details_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--顶部-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#47a6eb">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/gain_details_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="余有钱A"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/gain_details_add_del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gain_details_title"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/gain_details_delete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true">
+
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="3dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:paddingTop="5dp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/gain_details_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_toRightOf="@id/gain_details_delete"
+                                android:text="1"
+                                android:textColor="@color/white"
+                                android:textSize="35sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/gain_dtails_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30dp"
+                                android:layout_toRightOf="@id/gain_details_number">
+
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="3dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white" />
+
+                                <View
+                                    android:layout_width="3dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gain_details_add_del"
+                            android:layout_centerHorizontal="true"
+                            android:text="产品数量(份)"
+                            android:textColor="@color/my_text"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <!--顶部下面三个布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4ea3e1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <!--起投-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/gain_details_qitou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="起投"
+                            android:textColor="@color/my_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/gain_details_qitou_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gain_details_qitou"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="1000"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <!--增益天数-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/gain_details_tianshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="增益天数"
+                            android:textColor="@color/my_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/gain_details_tisnshu_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gain_details_tianshu"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="365天"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+
+                    </RelativeLayout>
+
+                    <!--风险等级-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/gain_details_dengji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="风险等级"
+                            android:textColor="@color/my_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/gain_details_dengji_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gain_details_dengji"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="低"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--图片-->
+                <ImageView
+                    android:id="@+id/gain_details_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--间隔线-->
+                <include layout="@layout/gain_details_divide"></include>
+
+                <!--买入须知 提现须知-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/gain_details_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+                        <!--买入须知-->
+                        <RelativeLayout
+                            android:id="@+id/gain_details_mrxz"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/gain_details_mrxz_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="买入须知"
+                                android:textColor="@color/more_gray"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:id="@+id/gain_details_mrxz_line"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#88cef5"
+                                android:visibility="visible"></View>
+                        </RelativeLayout>
+                        <!--体现须知-->
+                        <RelativeLayout
+                            android:id="@+id/gain_details_txxz"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/gain_details_txxz_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="提现须知"
+                                android:textColor="@color/more_gray"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:id="@+id/gain_details_txxz_line"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#88cef5"
+                                android:visibility="gone"></View>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/finance_ty_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/gain_details_top"
+                        android:background="#ececef"></View>
+
+                    <!--确认时间 增益时间  提现记录-->
+                    <LinearLayout
+                        android:id="@+id/gain_details_mrxz_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/finance_ty_view"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                        <!--确认时间-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="确认时间"
+                                android:textColor="@color/more_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/gain_details_qrsj"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="2.5"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/gain_details_top"
+                            android:background="#ececef"></View>
+                        <!--增益时间-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="增益时间"
+                                android:textColor="@color/more_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/gain_details_zysj"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="2.5"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/gain_details_top"
+                            android:background="#ececef"></View>
+                        <!--购买方式-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="购买方式"
+                                android:textColor="@color/more_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/gain_details_gmfs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="2.5"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/gain_details_top"
+                            android:background="#ececef"></View>
+
+                    </LinearLayout>
+
+                    <!--提现方式 提现时间  提现规则-->
+                    <LinearLayout
+                        android:id="@+id/gain_details_txxz_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/finance_ty_view"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <!--提现方式-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="提现方式"
+                                android:textColor="@color/more_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/gain_details_txfs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="2.5"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/gain_details_top"
+                            android:background="#ececef"></View>
+                        <!--提现时间-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="提现时间"
+                                android:textColor="@color/more_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/gain_details_txsj"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="2.5"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/gain_details_top"
+                            android:background="#ececef"></View>
+                        <!--提现规则-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="提现规则"
+                                android:textColor="@color/more_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/gain_details_txgz"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="2.5"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/gain_details_top"
+                            android:background="#ececef"></View>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--间隔线-->
+                <include layout="@layout/gain_details_divide"></include>
+
+                <!--已投标人数-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:text="已投标人数"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/gain_details_tbrs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/red"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="人"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--间隔线-->
+                <include layout="@layout/gain_details_divide"></include>
+
+                <!--风险提示-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:text="风险提示"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ececef"></View>
+
+                    <TextView
+                        android:id="@+id/gain_details_fxts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!--间隔线-->
+                <include layout="@layout/gain_details_divide"></include>
+
+                <!--产品介绍-->
+                <LinearLayout
+                    android:id="@+id/gain_details_cpjs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:text="产品介绍"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/gain_details_cpjs_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/down"
+                        android:gravity="right"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+                <!--产品介绍详细信息-->
+                <LinearLayout
+                    android:id="@+id/gain_details_cpjs_xq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/gray"></View>
+
+                    <TextView
+                        android:id="@+id/gain_details_cpjs_xq_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!--间隔线-->
+                <include layout="@layout/gain_details_divide"></include>
+
+                <!--安全保证-->
+                <LinearLayout
+                    android:id="@+id/gain_details_aqbz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:text="安全保障"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/gain_details_aqbz_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/down"
+                        android:gravity="right"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+                <!--安全保证详细信息-->
+                <LinearLayout
+                    android:id="@+id/gain_details_aqbz_xq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/gray"></View>
+
+                    <TextView
+                        android:id="@+id/gain_details_aqbz_xq_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!--间隔线-->
+                <include layout="@layout/gain_details_divide"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="40dp">
+                    <!--常见问题-->
+                    <LinearLayout
+                        android:id="@+id/gain_details_cjwt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="8dp"
+                            android:text="常见问题"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/gain_details_cjwt_img"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/down"
+                            android:gravity="right"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <!--常见问题详细信息-->
+                    <LinearLayout
+                        android:id="@+id/gain_details_cjwt_xq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray"></View>
+
+                        <TextView
+                            android:id="@+id/gain_details_cjwt_xq_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ececef"></View>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/gain_details_ljtz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#48a7ec"
+            android:gravity="center"
+            android:text="立即投资"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

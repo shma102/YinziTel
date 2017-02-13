@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/zaiqi_financial_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/zaiqi_finance_my_back2my"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lccp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/zaiqi_finance_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zaiqi_financial_toolbar">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f9f9f8"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <!--顶部-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#47a6eb"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/zaiqi_finance_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="在投本金"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/zaiqi_finance_earning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="262.00"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="累计收益(元)"
+                        android:textColor="@color/my_text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <!--顶部下面三个布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4ea3e1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="10dp">
+
+                    <!--期限-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/zaiqi_finance_qixian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="期限"
+                            android:textColor="@color/my_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/zaiqi_finance_qixian_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/zaiqi_finance_qixian"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="365天"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <!--约定年化收益-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/zaiqi_finance_shouyi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="约定年化收益"
+                            android:textColor="@color/my_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/zaiqi_finance_shouyi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/zaiqi_finance_shouyi"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="3.05%"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+
+                    </RelativeLayout>
+
+                    <!--风险等级-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/zaiqi_finance_dengji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="风险等级"
+                            android:textColor="@color/my_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/zaiqi_finance_dengji_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/zaiqi_finance_dengji"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="低"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--信息-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="#eeeef3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/zaiqi_finance_xinxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/more_gray"
+                        />
+                </LinearLayout>
+
+                <!--持有金额 预估到期 可变现-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <!--持有金额-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="持有金额(元)"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/zaiqi_finance_cyje"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300.00"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/light_black"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"></View>
+                    <!--预估到期-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预估到期可获得(元)"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/zaiqi_finance_ygdq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="310.25"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/light_black"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"></View>
+                    <!--可变现资金-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可变现资金(元)"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/zaiqi_finance_bxzj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="301.20"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/light_black"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="40dp"></View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/zaiqi_finance_bianxian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#47a6eb"
+            android:gravity="center"
+            android:text="变现"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zaiqi_finance_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zaiqi_financial_toolbar"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/finance_product_progressbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

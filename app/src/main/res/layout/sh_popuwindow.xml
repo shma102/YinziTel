@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/zhujiao_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textview_acctpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提示"
+            android:textColor="@color/title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shts_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shts"
+            android:paddingRight="5dp" />
+
+
+    </RelativeLayout>
+
+   <TextView
+       android:id="@+id/shts_tv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/setting_relativelayout"
+       android:text="提前赎回将不再计算利息，并且若为到期赠品价值将被扣除。"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginRight="20dp"
+       android:textSize="16sp"
+       />
+    <Button
+        android:id="@+id/shts_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/shts_tv"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_selector3"
+        android:text="提交"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

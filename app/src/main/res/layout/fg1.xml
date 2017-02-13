@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fg1_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/call"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/record_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fg1_toolbar"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/edittext_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/LinearLayout_keyboard"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/callnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="5"
+                    android:background="#f0f0f0"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:textColor="#47A0E6"
+                    android:textSize="40dp"></EditText>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_keyboard"
+            android:layout_width="fill_parent"
+            android:layout_height="268dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ly_keyboard"
+                android:layout_width="fill_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_key1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_01" />
+
+                <ImageButton
+                    android:id="@+id/button_key2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_02" />
+
+                <ImageButton
+                    android:id="@+id/button_key3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_03" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="61dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_key4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_04" />
+
+                <ImageButton
+                    android:id="@+id/button_key5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_05" />
+
+                <ImageButton
+                    android:id="@+id/button_key6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_06" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="61dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_key7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_07" />
+
+                <ImageButton
+                    android:id="@+id/button_key8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_08" />
+
+                <ImageButton
+                    android:id="@+id/button_key9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_09" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hint_keyBoard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_close" />
+
+                <ImageButton
+                    android:id="@+id/button_key11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_00" />
+
+                <ImageButton
+                    android:id="@+id/button_delKey"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dia_keyboard_delete"
+                    android:paddingRight="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

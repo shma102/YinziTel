@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="title">#46afec</color>
+    <color name="index_normal">#454545</color>
+    <color name="index_click">#47AFEC</color>
+    <color name="transparent">#F8F8F8</color>
+    <color name="tv_color">#3BA0E9</color>
+    <color name="tv_color_normal">#929292</color>
+    <color name="gray">#E3E3E3</color>
+    <color name="finance_zhuanqu">#f6f7f9</color>
+    <color name="pop_textcolor">#BEBEBE</color>
+    <color name="recharge_text2">#C7C7C7</color>
+    <color name="red">#ff00</color>
+    <color name="my_money">#6db9f0</color>
+    <color name="my_text">#BBDff8</color>
+    <color name="my_view">#91E2FF</color>
+    <color name="my_taocan1">#A1A1A1</color>
+    <color name="my_taocan2">#363636</color>
+    <color name="level_btn1">#1290BD</color>
+    <color name="level_btn2">#47B0ED</color>
+    <color name="level_text">#5F626D</color>
+    <color name="finance_text">#8192a1</color>
+    <color name="my_finance">#FF8247</color>
+    <color name="more_gray">#A1A1A1</color>
+    <color name="light_black">#4F4F4F</color>
+    <color name="gray_more">#b2b2b2</color>
+    <color name="devide">#f2f2f6</color>
+    <color name="light_red">#e52c33</color>
+    <color name="goods_money">#f84c02</color>
+
+    <color name="holo_blue_light">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+</resources>

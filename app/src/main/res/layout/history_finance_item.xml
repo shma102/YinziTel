@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/history_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <!--预计年化收益-->
+        <RelativeLayout
+            android:id="@+id/history_item_shouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/history_item_shouyi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ef4341"
+                android:textSize="18sp"
+                android:text="0.00"/>
+            <TextView
+                android:layout_below="@id/history_item_shouyi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="总收益"
+                android:textColor="@color/more_gray"/>
+
+        </RelativeLayout>
+
+        <!--状态-->
+        <LinearLayout
+            android:id="@+id/history_item_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/history_item_shouyi"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ef4341"
+                android:textSize="18sp"
+                android:text="已赎回"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/more_gray"
+                android:text="状态"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
